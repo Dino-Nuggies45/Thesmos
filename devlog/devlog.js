@@ -29,7 +29,7 @@ function resetTimer() {
 }
 
 function saveLog() {
-    const logText = document.getElementById('logText').value.trim();
+    const logText = document.getElementById('logInput').value.trim();
     if (!logText) return alert('Please enter a log entry.');
 
     const now = new Date();
@@ -48,7 +48,7 @@ function saveLog() {
 
     displayLogs();
     resetTimer();
-    document.getElementById('logText').value = '';
+    document.getElementById('logInput').value = '';
 }
 
 function displayLogs() {
