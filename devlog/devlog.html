@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thesmos Devlog</title>
+        <link rel="stylesheet" href="devlog-style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Thesmos Devlog</h1>
+
+            <div class="timer" id="timer">00:00:00</div>
+            <div class="buttons">
+                <button oncliclk="startTimer()">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer()">Reset</button>
+            </div>
+
+            <h3>What did you work on?</h3>
+            <textarea id="logInput" plcaceholder="Write your log here..."></textarea><br>
+            <button onclick="saveLog()">Save Log</button>
+
+            <h3>Saved Logs:</h3>
+            <div id="logList"></div>
+        </div>
+
+        <script src="devlog.js"></script>
+    </body>
+</html>
