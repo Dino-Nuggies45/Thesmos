@@ -1,0 +1,58 @@
+:root{
+    --bg1: url('../assets/olympus-bg.jpg');
+    --bg2: url('../assets/gods/aphrodite/bg-aphrodite.jpg');
+    --accent: #ef8ab4;
+    --accent-2: #ffd8e8;
+    --gold: #e0b94a;
+    --glass: rgba(255, 255, 255, 0.06);
+    --stage-height: 100vh;
+}
+
+html, body{height:100%; margin:0; font-family:'Cormorant Garamond', serif; color:#24172a; background: #000;}
+
+.stage{
+    position:fixed; inset:0; z-index:0;
+    background: var(--bg1) center/cover no-repeat;
+    transition: filter 600ms ease, background 600ms ease;
+}
+
+.stage.dimmed{
+    filter: blur(6px) brightness(.6);
+}
+
+.overlay{
+    position:fixed; inset:0; z-index:20; pointer-events:none;
+}
+
+.messsage{
+    position:fixed; top:22%; left:50%; transform:translateX(-50%) translateY(12px);
+    z-index:40; text-align:center; color:white; opacity:0;
+    transition:opacity 520ms ease, transform 520ms ease;
+}
+
+.message.show{ opacity:1; transform:translateX(-50%) translateY(0); pointer-events:auto; }
+
+.message h2{
+    margin: 0 0 14px 0; font-size: 2rem; letter-spacing: .6px;
+    background: linear-gradient(90deg, #fff 0%, var(--gold) 40%, #fff 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-shadow: 0 6px 12px 24px rgba(0,0,0,0.45);
+}
+
+.action-btn{
+    padding: 10px 22px; border-radius: 999px; border: 2px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    color: white; font-size: 1rem; cursor: pointer;
+    box-shadow: 0 6px 30px rgba(255, 160, 190, 0.06);
+}
+
+.clam-area{
+    position: fixed; left: 50%; top: 48%; transform: translate(-50%, -50%);
+    width: 360px; max-width: 86vw; height: 240px; z-index: 50; pointer-events: none;
+    displayu: flex; align-items: center; justify-content: center;
+}
+
+.clam-svg{ width: 100%; height: auto; display: block; }
+
+#pearl{ transition: opacity 420ms ease; }
+
