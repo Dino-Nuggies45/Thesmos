@@ -9,64 +9,7 @@
 </head>
 <body>
 
-    <div id="stage" class="stage"></div>
 
-    <div id="overlay" class="overlay" aria-hidden="false">
-        <svg id="ripple-svg" viewbox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-                <radialGradient id="waterGrad" cx="50%" cy="40%">
-                    <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
-                    <stop offset="60%" stop-color="#ffd9f0" stop-opacity="0.2"/>
-                    <stop offset="100%" stop-color="#ffd8e8" stop-opacity="0.06"/>
-                </radialGradient>
-                <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur stdDeviation="18" result="blur"></feGaussianBlur>
-                    <feBlend in="SourceGraphic" in2="blur"></feBlend>
-                </filter>
-            </defs>
-
-            <g id="dropGroup" transform="translate(600, 140)">
-                <circle id="drop" cx="0" cy="-160" r="12" fill="#ffd9d0" opacity="0"></circle>
-            </g>
-
-            <circle id="ripple" cx="600" cy="380" r="8" fill="none" stroke="ffcfdf" stroke-width="2" opacity="0"></circle>
-        </svg>
-    </div>
-
-    <div id="message" class="message" role="dialog" aria-live="polite">
-        <h2>Lady Aphrodite has a message for you...</h2>
-        <button id="yesBtn" class="action-btn" aria-label="Yes, show me">Yes?</button>
-    </div>
-
-    <div id="clam-area" class="clam-area" aria-hidden="true">
-        <svg id="clam-svg" viewBox="0 0 260 170" class="clam-svg" aria-hidden="true" role="img">
-            <path id="clam-bottom" d="M10 110 Q130 180 250 110 Q130 150 150 10 110 Z"
-                    fill="#f9d9e6" stroke="#d29ab0" stroke-width="2" />
-            <g id="top-shell-group" transform="translate(0,0)">
-                <path id="clam-top" d="M10 110 Q130 30 250 110 Q130 80 10 110 Z"
-                    fill="#f9d9e6" stroke="#d29ab0" stroke-width="2" />
-            </g>
-
-            <circle id="pearl" cx="130" cy="100" r="18" fill="url(#waterGrad)" opacity="0.0" />
-        </svg>
-
-        <div id="cardWrap" class="card-wrap" aria-hidden="true">
-            <div id="card" class="card" role="article" aria-labelledby="cardTitle">
-                <div class="card-inner">
-                    <h3 id="cardTitle">The Lovers</h3>
-                    <p id="cardText">A tender nudge towards openness and beautiful possibility.</p>
-                    <img id="cardImage" src="../assets/gods/aphrodite/cards/lovers.jpg" alt="The Lovers card image" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="bottomPopup" class="bottom-popup" role="dialog" aria-live="polite">
-        <p id="popupText">You drew the Lovers, keep your heart open.</p>
-        <div class="popup-actions">
-            <button id="continueBtn" class="btn-continue">Continue</button>
-        </div>
-    </div>
 
     <section id="wiki" class="wiki" aria-hidden="true">
         <div class="left">
