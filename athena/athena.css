@@ -1,12 +1,12 @@
 body {
-    background: url('../assets/gods/aphrodite/bg-aphrodite.jpg');
+    background: url('../assets/gods/athena/bg.jpg');
     background-size: cover;
     
 }
 
 
 .wiki{
-    background: #d1a9a1;
+    background: #587296;
     display: flex;
     gap: 24px;
     align-items: flex-start;
@@ -19,8 +19,8 @@ body {
     overflow: auto;
     color: #222;
 }
-.wiki .left{ flex: 2; color: #8a4b5f;}
-.wiki .right{ flex: 1; max-width: 320px; color: #8a4b5f; text-align: center;}
+.wiki .left{ flex: 2; color: #B5C7CD;}
+.wiki .right{ flex: 1; max-width: 320px; color: #B5C7CD; text-align: center;}
 .wiki img{ width: 100%; border-radius: 12px; display: block; margin-bottom: 12px; }
-.wiki h2{ margin-top: 0; font-size: 1.8rem; color: #8a4b5f; }
+.wiki h2{ margin-top: 0; font-size: 1.8rem; color: #B5C7CD; }
 
