@@ -1,20 +1,24 @@
+body {
+    background: url('../assets/gods/aphrodite/bg-aphrodite.jpg');
+}
+
 
 .wiki{
+    background: #d1a9a1;
     display: flex;
     gap: 24px;
     align-items: flex-start;
     position: fixed;
     inset: 10% 8% 8% 8%;
     z-index: 70;
-    background: rgba(255, 255, 255, 0.98);
     border-radius: 14px;
-    padding: 22px;
+    padding: 5px;
     box-shadow: 0 24px 80px rgba(0,0,0,0.45);
     overflow: auto;
     color: #222;
 }
-.wiki .left{ flex: 2; }
-.wiki .right{ flex: 1; max-width: 320px; }
+.wiki .left{ flex: 2; color: #8a4b5f;}
+.wiki .right{ flex: 1; max-width: 320px; color: #8a4b5f; text-align: center;}
 .wiki img{ width: 100%; border-radius: 12px; display: block; margin-bottom: 12px; }
-.wiki h2{ margin-top: 0; font-size: 1.8rem; color: #b04b78; }
+.wiki h2{ margin-top: 0; font-size: 1.8rem; color: #8a4b5f; }
 
