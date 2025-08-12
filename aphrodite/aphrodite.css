@@ -24,7 +24,7 @@ html, body{height:100%; margin:0; font-family:'Cormorant Garamond', serif; color
     position:fixed; inset:0; z-index:20; pointer-events:none;
 }
 
-.messsage{
+.message{
     position:fixed; top:22%; left:50%; transform:translateX(-50%) translateY(12px);
     z-index:40; text-align:center; color:white; opacity:0;
     transition:opacity 520ms ease, transform 520ms ease;
@@ -70,7 +70,7 @@ html, body{height:100%; margin:0; font-family:'Cormorant Garamond', serif; color
     border-radius: 14px; box-shadow: 0 16px 48px rgba( 0, 0, 0, 0.28);
     transform-origin: center bottom;
     transform: perspective(900px) rotateX(78deg) translateZ(-200px) scale(.8);
-    opacity: 0; transition: opcacity 240ms ease;
+    opacity: 0; transition: opacity 240ms ease;
     overflow: hidden;
 }
 
