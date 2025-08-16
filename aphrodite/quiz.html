@@ -123,16 +123,18 @@
             });
 
             const resultDiv = document.getElementById('result');
-
-            if (total <= 7) {
-                resultDiv.textContent = `Score: ${total} - `
+            if(total = 0) {
+                resultDiv.textContent = `Score: ${total} - You rarely follow Aphrodite's teachings, begin with small acts of kindness towards yourself and others to awaken her influence. `
+                resultDiv.style.color = '#cb7d93'
+            }else if (total <= 7) {
+                resultDiv.textContent = `Score: ${total} - You hold the potanetial for Aphrodite's grace, yet you may need to open yourself more to connection and appreciation of beauty. `
                 resultDiv.style.color = '#d2a9a2'
             } else if (total <= 14) {
-                resultDiv.textContent = `Score: ${total} - `
+                resultDiv.textContent = `Score: ${total} - You walk confidently in Aphrodite's path, but deepening your self love or empathy towards others could strengthen your presence.`
                 resultDiv.style.color = '#8a4b5f'
             } else {
-                resultDiv.textContent = `Score: ${total} - `
-                resultDiv.style.color = '#d8547e'
+                resultDiv.textContent = `Score: ${total} - You embody Aphrodite's teachings including her ideals of love, beauty, and harmony, radiating kindness and connection in your daily life. `
+                resultDiv.style.color = '#863a52'
             }
         }
     </script>

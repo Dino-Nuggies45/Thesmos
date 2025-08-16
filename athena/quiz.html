@@ -123,15 +123,17 @@
             });
 
             const resultDiv = document.getElementById('result');
-
-            if (total <= 7) {
-                resultDiv.textContent = `Score: ${total} - `
+            if(total = 0) {
+                resultDiv.textContent = `Score: ${total} - You rarely draw on Athena's teachings, consider starting small with patience, fairness, thoughtful problem-solving. `
+                resultDiv.style.color = '#000000'
+            } else if (total <= 7) {
+                resultDiv.textContent = `Score: ${total} - You have the seeds of Athena's guidence within you, yet you may need to slow down, think more strategically, and trust your insight.`
                 resultDiv.style.color = '#303e52'
             } else if (total <= 14) {
-                resultDiv.textContent = `Score: ${total} - `
+                resultDiv.textContent = `Score: ${total} - You walk strongly in Athena's path, but sharpening your planning or patience could elevate your decision-making. `
                 resultDiv.style.color = '#587296'
             } else {
-                resultDiv.textContent = `Score: ${total} - `
+                resultDiv.textContent = `Score: ${total} - You embody Athena's wisdom, strategy, and fairness in every action, balancing intellect with courage. `
                 resultDiv.style.color = '#B5C7CD'
             }
         }
