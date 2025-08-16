@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=2"/>
-<title>Aphrodite Teachings Quiz</title>
+<title>Zeus Teachings Quiz</title>
 <style>
     body {
         font-family: Arial, sans-serif;
         max-width: 600px;
         margin: 20px auto;
-        background: url('../assets/gods/aphrodite/quiz-bg.jpg');
+        background: url('../assets/gods/zeus/quiz-bggg.jpg');
         background-size: cover;
         backdrop-filter: blur(5px);
-        color: #8a4b5f;
+        color: #000000;
         padding: 20px;
         border-radius: 22px;
     }
 
     h2 {
         text-align: center;
-        color: #8a4b5f;
+        color: #725020;
     }
 
     .question {
@@ -33,8 +33,8 @@
     }
 
     button {
-        background: #cb7d93;
-        color: #8a4b5f;
+        background: #DFBE92;
+        color: #805923;
         border: none;
         padding: 20px 20px;
         cursor: pointer;
@@ -43,7 +43,7 @@
     }
 
     button:hover {
-        background: #863a52;
+        background: #b37d32;
     }
 
     .result {
@@ -123,18 +123,18 @@
             });
 
             const resultDiv = document.getElementById('result');
-            if(total = 0) {
+            if(total == 0) {
                 resultDiv.textContent = `Score: ${total} - You rarely act on Zeus's teachings, consider starting small with fairness and decisive action. `
-                resultDiv.style.color = '#d2a9a2'
+                resultDiv.style.color = '#000000'
             } else if (total <= 7) {
                 resultDiv.textContent = `Score: ${total} - You show potential for leadership ad justice but may hesitiate or avoid taking  `
-                resultDiv.style.color = '#d2a9a2'
+                resultDiv.style.color = '#725020'
             } else if (total <= 14) {
                 resultDiv.textContent = `Score: ${total} - You walk strongly in Zeus's path, but you could sharpen your decisivness or compassion in some areas. `
-                resultDiv.style.color = '#8a4b5f'
+                resultDiv.style.color = '#805923'
             } else {
                 resultDiv.textContent = `Score: ${total} - You embody Zeus's values fully, a just leader who brings protection and order wherever you go. `
-                resultDiv.style.color = '#d8547e'
+                resultDiv.style.color = '#b37d32'
             }
         }
     </script>
